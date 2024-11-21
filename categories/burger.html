@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ATLUS </title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <iframe src="https://lottie.host/embed/fd3a0b73-f5c1-4fda-8d85-003b87fc1b09/DqQLSkpBEx.json" style="border: none; width: 100px; height: 100px;"></iframe>
+        <div class="header-right">
+            <select class="language-select">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+                <option value="kz">Қазақша</option>
+            </select>
+            <button class="btn login">Войти</button>
+            <button class="btn register">Регистрация</button>
+        </div>
+    </div>
+</header>
+
+<section class="location">
+    <p>Ваше местоположение: <span id="user-location">Петропавловск</span> <a href="#">Изменить</a></p>
+</section>
+
+<main>
+    <h1> Меню Бургеров </h1>
+    <div class="pizza-menu">
+        <div class="pizza-item">
+            <h2>Чизбургер</h2>
+            <div class="pizza-photo">
+                <img src="public/photos of menu/cheeseburger.png" alt="Чизбургер" />
+            </div>
+            <p><strong>Цена:</strong> 1500₸</p>
+            <p><strong>Состав:</strong> Говяжья котлета, сыр чеддер, салат, помидоры, соус</p>
+            <p>Классический чизбургер с сочной котлетой, расплавленным сыром и свежими овощами.</p>
+
+            <div class="pizza-options">
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+                <button class="btn add-to-cart">Добавить в корзину</button>
+            </div>
+
+            <div class="pickup-delivery">
+                <label for="pickup">Способ получения:</label>
+                <select id="pickup" name="pickup">
+                    <option value="pickup">Самовывоз</option>
+                    <option value="delivery">Доставка</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="pizza-item">
+            <h2>Бургер с беконом</h2>
+            <div class="pizza-photo">
+                <img src="../public/bacon_burger.jpg" alt="Бургер с беконом" />
+            </div>
+            <p><strong>Цена:</strong> 1800₸</p>
+            <p><strong>Состав:</strong> Говяжья котлета, бекон, сыр чеддер, салат, помидоры, соус</p>
+            <p>Бургер с хрустящим беконом и расплавленным сыром чеддер для любителей мясных закусок.</p>
+
+            <div class="pizza-options">
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+                <button class="btn add-to-cart">Добавить в корзину</button>
+            </div>
+
+            <div class="pickup-delivery">
+                <label for="pickup">Способ получения:</label>
+                <select id="pickup" name="pickup">
+                    <option value="pickup">Самовывоз</option>
+                    <option value="delivery">Доставка</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="pizza-item">
+            <h2>Гамбургер</h2>
+            <div class="pizza-photo">
+                <img src="../public/hamburger.jpg" alt="Гамбургер" />
+            </div>
+            <p><strong>Цена:</strong> 1200₸</p>
+            <p><strong>Состав:</strong> Говяжья котлета, салат, помидоры, лук, соус</p>
+            <p>Простой и вкусный гамбургер с сочной говяжьей котлетой и свежими овощами.</p>
+
+            <div class="pizza-options">
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+                <button class="btn add-to-cart">Добавить в корзину</button>
+            </div>
+
+            <div class="pickup-delivery">
+                <label for="pickup">Способ получения:</label>
+                <select id="pickup" name="pickup">
+                    <option value="pickup">Самовывоз</option>
+                    <option value="delivery">Доставка</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="pizza-item">
+            <h2>Вегетарианский бургер</h2>
+            <div class="pizza-photo">
+                <img src="../public/vegan_burger.jpg" alt="Вегетарианский бургер" />
+            </div>
+            <p><strong>Цена:</strong> 1600₸</p>
+            <p><strong>Состав:</strong> Веганская котлета, авокадо, салат, помидоры, соус</p>
+            <p>Для вегетарианцев: вкусный бургер с растительной котлетой и свежими ингредиентами.</p>
+
+            <div class="pizza-options">
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+                <button class="btn add-to-cart">Добавить в корзину</button>
+            </div>
+
+            <div class="pickup-delivery">
+                <label for="pickup">Способ получения:</label>
+                <select id="pickup" name="pickup">
+                    <option value="pickup">Самовывоз</option>
+                    <option value="delivery">Доставка</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<div class="about">
+    <h2>О нашей компании</h2>
+    <p>
+        ATLUS – это ваш персональный сервис для заказа вкусной и свежей еды.
+        Мы работаем только с проверенными ресторанами и предлагаем широкий выбор блюд: от пиццы и бургеров до десертов.
+        Быстрая доставка, высокое качество и доступные цены – наш приоритет!
+    </p>
+</div>
+</main>
+
+<footer>
+    <p>© 2024 ATLUS. Все права защищены.</p>
+    <p>Контакты: timur.mukashev2005@gmail.com | +7 776 771 62 15</p>
+    <div class="social-links">
+        <a href="https://www.youtube.com/" target="_blank">YouTube</a> |
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </div>
+</footer>
+</body>
+</html>
